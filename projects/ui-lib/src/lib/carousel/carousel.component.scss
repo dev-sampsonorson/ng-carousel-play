@@ -1,0 +1,53 @@
+:host {
+    display: block;
+
+    /* width: 706px;
+    height: 250px; */
+}
+
+.carousel {
+    position: relative;
+
+    /* width: 706px;
+    height: 250px; */
+    overflow: hidden;
+    background: lightcoral;
+
+    &__items {
+        position: absolute;
+        overflow: hidden;
+        user-select: none; /* supported by Chrome and Opera */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+    }
+
+    &__box {
+        position: absolute;
+        cursor: pointer;
+
+        // will-change: transform;
+        /* transition-property: transform;
+        transition-delay: 0s;
+        transition-duration: .005s; */
+    }
+
+    &__photo {
+        pointer-events: none;
+        position: absolute;
+        left: 3px;
+        right: 0;
+        clip-path: inset(6px 3px 6px 3px);
+    }
+
+    &__num {
+        pointer-events: none;
+        position: absolute;
+        background: #fff;
+        padding: 12px;
+        font-weight: 600;
+        right: 6px;
+        top: 12px;
+    }
+}
